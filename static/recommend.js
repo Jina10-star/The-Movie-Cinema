@@ -302,7 +302,7 @@ function get_movie_cast(movie_id,my_api_key){
               cast_profiles.push("https://image.tmdb.org/t/p/original"+my_movie.cast[my_cast].profile_path);
             }
             else {
-              cast_profiles.push("static/default_1.jpg");
+              cast_profiles.push("static/bb.jpg");
             }
           }
         }
@@ -338,7 +338,7 @@ function get_movie_cast(movie_id,my_api_key){
             rec_posters.push("https://image.tmdb.org/t/p/original"+recommend.results[recs].poster_path);
           }
           else {
-            rec_posters.push("static/default_1.jpg");
+            rec_posters.push("static/bb.jpg");
           }
         }
       },
