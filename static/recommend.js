@@ -169,7 +169,7 @@ function show_details(movie_details,movie_title,my_api_key,movie_id,movie_title_
     poster = 'https://image.tmdb.org/t/p/original'+movie_details.poster_path;
   }
   else {
-    poster = 'static/default.jpg';
+    poster = 'static/default_1.jpg';
   }
   var overview = movie_details.overview;
   var genres = movie_details.genres;
@@ -302,7 +302,7 @@ function get_movie_cast(movie_id,my_api_key){
               cast_profiles.push("https://image.tmdb.org/t/p/original"+my_movie.cast[my_cast].profile_path);
             }
             else {
-              cast_profiles.push("static/default.jpg");
+              cast_profiles.push("static/default_1.jpg");
             }
           }
         }
@@ -338,7 +338,7 @@ function get_movie_cast(movie_id,my_api_key){
             rec_posters.push("https://image.tmdb.org/t/p/original"+recommend.results[recs].poster_path);
           }
           else {
-            rec_posters.push("static/default.jpg");
+            rec_posters.push("static/default_1.jpg");
           }
         }
       },
